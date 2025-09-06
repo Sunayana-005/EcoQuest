@@ -1,0 +1,32 @@
+{
+  "name": "ecoquest",
+  "version": "1.0.0",
+  "description": "gamified environmental education platform",
+  "homepage": "https://github.com/Sunayana-005/EcoQuest#readme",
+  "bugs": {
+    "url": "https://github.com/Sunayana-005/EcoQuest/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sunayana-005/EcoQuest.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
