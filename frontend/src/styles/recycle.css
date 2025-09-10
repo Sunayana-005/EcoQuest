@@ -1,0 +1,77 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.items img {
+  width: 100px;
+  margin: 10px;
+  cursor: grab;
+}
+
+.bins {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bin {
+  width: 150px;
+  height: 150px;
+  border: 2px dashed #333;
+  border-radius: 10px;
+  line-height: 150px;
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.dragging {
+  opacity: 100;
+  transform: scale(1.1);
+  /* box-shadow: 0 0 10px #00ff99; */
+  transition: all 0.2s ease;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: green;
+}
+#score {
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: #2e8b57;
+}
+
+#feedback {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#spirit {
+  width: 80px;
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.bin.correct {
+  background-color: #a8e6cf;
+  transition: background-color 0.5s ease;
+}
+
+.bin.incorrect {
+  background-color: #ff8b94;
+  transition: background-color 0.5s ease;
+}

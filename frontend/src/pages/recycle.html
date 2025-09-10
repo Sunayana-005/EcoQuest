@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recycling Game</title>
+  <link rel="stylesheet" href="recycle.css"/>
+</head>
+    <body>
+    <h1>Sort the Garbage!</h1>
+    <div id="score">Score: 0</div>
+
+    <div class="game-container">
+    <div class="items">
+        <img id="item1" src="plastic.jpg" class="draggable" data-type="plastic" draggable="true"/>
+        <img id="item2" src="banana.png" class="draggable" data-type="organic" draggable="true"/>
+        <img id="item3"src="paper.png" class="draggable" data-type="paper" draggable="true"/>
+    </div>
+
+    <div class="bins">
+        <div class="bin" data-accept="plastic">Plastic Bin</div>
+        <div class="bin" data-accept="organic">Organic Bin</div>
+        <div class="bin" data-accept="paper">Paper Bin</div>
+    </div>
+    </div>
+
+    <div id="feedback">
+        <img src="spirit.png" id="spirit" />
+        <p id="message">I’m watching your choices...</p>
+    </div>
+  <script src="recycle.js"></script>
+</body>
+</html>
