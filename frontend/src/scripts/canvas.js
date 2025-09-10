@@ -1,4 +1,4 @@
-import './canvas.css'
+import '../styles/canvas.css'
 import { resources } from './resource.js'
 
 const canvas = document.querySelector('#game-canvas');

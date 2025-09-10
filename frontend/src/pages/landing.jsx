@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Environmental Education</title>
-  <link rel="stylesheet" href="/styles/landing.css">
-</head>
-<body>
+import '../styles/landing.css'
+export default function Landing() {
+    console.log("LANDING PAGE")
+    return (
+
   <div class="container">
 
-    <!-- Sidebar -->
+    {/* <!-- Sidebar --> */}
     <aside class="sidebar">
-      <h2 class="logo">🌱 Environmental<br>Education</h2>
+      <h2 class="logo">🌱 Environmental<br />Education</h2>
       <nav>
         <ul>
           <li class="active"><a href="#">Home</a></li>
@@ -21,7 +17,8 @@
       </nav>
     </aside>
 
-    <!-- Main Content -->
+    {/* <!-- Main Content --> */}
+
     <main class="content">
       <header class="topbar">
         <a href="#" class="login">Log In</a>
@@ -29,12 +26,12 @@
 
       <section class="hero">
         <div class="hero-text">
-          <h1>Interactive Learning<br>for a Greener Tomorrow</h1>
+          <h1>Interactive Learning<br />for a Greener Tomorrow</h1>
           <p>A gamified desktop platform that educates students about environmental issues.</p>
           <a href="#" class="btn">Get Started</a>
         </div>
         <div class="hero-img">
-          <img src="https://via.placeholder.com/250x250?text=Illustration" alt="Eco Learning">
+          <img src="https://via.placeholder.com/250x250?text=Illustration" alt="Eco Learning" />
         </div>
       </section>
 
@@ -48,10 +45,11 @@
           </p>
         </div>
         <div class="impact-img">
-          <img src="https://via.placeholder.com/200x200?text=Tablet" alt="Impact Learning">
+          <img src="https://via.placeholder.com/200x200?text=Tablet" alt="Impact Learning" />
         </div>
       </section>
     </main>
+  
   </div>
-</body>
-</html>
+    )
+}

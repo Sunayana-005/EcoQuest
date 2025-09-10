@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Login Page</title>
-    <link rel="stylesheet" href="../styles/login.css"> </head>
-<body>
+import '../styles/login.css'
 
+export default function Login() {
+  console.log("LOGIN PAGE")
+  
+  return (
     <div class="login-container">
         <div class="login-image">
-            <img src="../src/sap.jpg" alt="Abstract Background">
+            <img src="/assets/sap.jpg" alt="Abstract Background" />
         </div>
 
         <div class="login-form">
@@ -19,17 +16,17 @@
             <form id="signinForm" method="POST">
                 <div class="input-group">
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" required>
+                    <input type="text" id="username" name="username" required />
                 </div>
 
                 <div class="input-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" required />
                 </div>
 
                 <div class="options">
                     <label>
-                        <input type="checkbox" checked> Remember Me
+                        <input type="checkbox" checked /> Remember Me
                     </label>
                 </div>
                 <a href="#">Forgot Password?</a>
@@ -43,6 +40,5 @@
             </div>
         </div>
     </div>
-
-</body>
-</html>
+  )
+}
